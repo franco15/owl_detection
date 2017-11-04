@@ -184,6 +184,9 @@ def predict(model, img):
 	batch_size = 32
 
 
+# 44 = <
+# 46 = >
+
 def manual_classification(train, valid):
 	if os.path.exists('train_manual_classification.csv'):
 		os.remove('train_manual_classification.csv')
@@ -194,7 +197,14 @@ def manual_classification(train, valid):
 			img = cv2.imread(t_path)
 			resize = cv2.resize(img, (900, 600))
 			cv2.imshow('owl or not owl?', resize)
-			key = cv2.waitKey(0)
+			while True:
+				key = cv2.waitKey(0)
+				if key is 27:
+					break
+				elif key is 48:
+					break
+				elif key is 49:
+					break
 			if key is 27: # escape key
 				break
 			elif key is 49: # 1
