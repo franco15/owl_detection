@@ -1,0 +1,24 @@
+example: python prepare_to_dream_with_owls_2nite.py /Users/owl/goinfre/owl_pics/burrow_86/F1-86-2017-06-30/ batch27 0
+
+gonna have to double check once images are sorted owl not owl
+
+need to contact owl guy to get criteria on deciding if owl or not owl
+
+manual clasific8or aka prepare_to_dream_with_owls_2nite:
+	if you wrongly classific8 an image hit escape to exit program,
+	go to the csv file and delete the row(s) you believe are wrongly classified,
+	last argument = last row of the csv file
+	something like that
+
+check last photos of F1-86-2017-06-12, is there an owl inside the trap??
+
+skipped directories:
+	F1-86-2017-05-23\ to\ 05-25/
+
+F1-86-2017-06-14a/EK000763.JPG: "Premature end of JPEG file"
+
+
+
+
+to use gpu to run keras program:
+	THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python your_net.py
